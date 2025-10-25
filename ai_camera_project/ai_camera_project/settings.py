@@ -85,9 +85,9 @@ WSGI_APPLICATION = 'ai_camera_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',  # change from sqlite3 to mysql
-        'NAME': 'ai_camera_db',                # MySQL database name
-        'USER': 'root',                        # your MySQL username
-        'PASSWORD': 'root',     # your MySQL password
+        'NAME': 'database_name',                # MySQL database name
+        'USER': 'user_name',                        # your MySQL username
+        'PASSWORD': 'your_password',     # your MySQL password
         'HOST': 'localhost',                   # usually localhost
         'PORT': '3306',            # default MySQL port
         
