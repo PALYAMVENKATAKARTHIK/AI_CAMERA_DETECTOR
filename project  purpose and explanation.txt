@@ -4,74 +4,47 @@
 
 
 Project Title:
-
 AI Camera Detector – Smart Real-Time Detection and Analysis
 
 Project Purpose:
-
 The AI Camera project is designed to capture and analyze visual data in real-time using artificial intelligence. Its primary goal is to detect faces, objects, and environmental conditions from live camera feeds, enabling automated monitoring, security, and analytics. This project demonstrates the integration of computer vision, machine learning, and web technologies for interactive and intelligent camera applications.
 
 
 Key Features:
-
-Real-Time Face Detection:
-
-Detects multiple human faces in camera feed using OpenCV’s Haar cascades.
-
-Displays bounding boxes and counts of detected faces.
+->Real-Time Face Detection:
+->Detects multiple human faces in camera feed using OpenCV’s Haar cascades.
+->Displays bounding boxes and counts of detected faces.
 
 
 Object Detection:
-
-Uses YOLOv8 model to detect and count objects in real-time.
-
-Can be extended for surveillance, tracking, or smart automation.
+->Uses YOLOv8 model to detect and count objects in real-time.
+->Can be extended for surveillance, tracking, or smart automation.
 
 
 Media Capture:
-
-Supports image capture and video recording from webcam.
-
-Saves captured media along with metadata (faces, objects, timestamps).
-
-User Authentication:
-
-Custom signup/login system with email-based authentication.
-
-Auto-generated numeric password for easy onboarding.
+->Supports image capture and video recording from webcam.
+->Saves captured media along with metadata (faces, objects, timestamps).
+->User Authentication:
+->Custom signup/login system with email-based authentication.
+->Auto-generated numeric password for easy onboarding.
 
 
 Web Dashboard:
-
-Interactive interface to view live camera feed and captured media.
-
-Provides analytics like number of faces, objects, and timestamps.
-
-Secure and Extensible:
-
-Backend built with Django for scalable data storage and API management.
-
-Supports adding additional AI models or analytics features in future.
-
-
+->Interactive interface to view live camera feed and captured media.
+->Provides analytics like number of faces, objects, and timestamps.
+->Secure and Extensible:
+->Backend built with Django for scalable data storage and API management.
+->Supports adding additional AI models or analytics features in future.
 
 Technologies Used:
-
 Backend: Django, Python
-
 Frontend: HTML, CSS, JavaScript (Bootstrap Icons)
-
 AI & CV: OpenCV, YOLOv8, Pillow, NumPy
-
 Database: Django ORM (SQLite/MySQL)
-
 Authentication: Custom User Model in Django
 
 Project Impact / Use Case:
-
 Security & Surveillance: Detect intruders or monitor crowds.
-
 Smart Analytics: Track human presence and object movement in real-time.
-
 Automation: Integrate with IoT devices for responsive actions.
 
