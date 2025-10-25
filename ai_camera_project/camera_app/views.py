@@ -13,7 +13,7 @@ import numpy as np
 from ultralytics import YOLO
 import json
 from .models import CustomUser
-
+import random
 
 # ---------------- Detection Models ----------------
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
@@ -23,18 +23,7 @@ yolo_model = YOLO("yolov8n.pt")  # Ensure this weights file exists
 def home(request):
     return render(request, 'home.html')
 
-# def index(request):
-#     return render(request, 'index.html')
-
-
-# ---------------- AUTH ----------------
-# camera_app/views.py
-from django.shortcuts import render, redirect
-from django.contrib import messages
-from .models import CustomUser
-
-import random
-
+# ---------------- SIGN UP ----------------
 def signup_view(request):
     if request.method == "POST":
         username = request.POST.get("username")
@@ -54,7 +43,7 @@ def signup_view(request):
     return render(request, "signup.html")
 
 
-
+# ----------------  LOGIN ----------------
 
 def login_view(request):
     if request.method == 'POST':
@@ -72,7 +61,7 @@ def login_view(request):
     return render(request, 'login.html')
 
 
-
+# ---------------- LOGOUT ----------------
 def logout(request):
     auth_logout(request)
     messages.success(request, 'You have been logged out.')
